@@ -130,7 +130,7 @@
         var optionsList = $('<ul>')
           .appendTo(selectOptions);
         $('<li>')
-          .text("language.")
+          .text("语言")
           .appendTo(optionsList);
 
         $.each(langs, function(name,display){
@@ -196,8 +196,14 @@
 
       $('<span>')
         .addClass('menuBtn')
-        .text(_('github.'))
+        .text(_('原项目仓库'))
         .click(function() { window.open('https://github.com/doublespeakgames/adarkroom'); })
+        .appendTo(menu);
+
+      $('<span>')
+        .addClass('menuBtn')
+        .text(_('镜像制作仓库'))
+        .click(function() { window.open('https://github.com/Firfr/adarkroom'); })
         .appendTo(menu);
 
       // Register keypress handlers
@@ -821,11 +827,11 @@
         enabled = !$SM.get('config.soundOn');
       }
       if (!enabled) {
-        $('.volume').text(_('sound on.'));
+        $('.volume').text(_('有声🔊'));
         $SM.set('config.soundOn', false);
         AudioEngine.setMasterVolume(0.0);
       } else {
-        $('.volume').text(_('sound off.'));
+        $('.volume').text(_('静音🔇'));
         $SM.set('config.soundOn', true);
         AudioEngine.setMasterVolume(1.0);
       }
@@ -869,21 +875,21 @@
     // Tell new users that there's sound now!
     $SM.set('playStats.audioAlertShown', true);
     Events.startEvent({
-      title: _('Sound Available!'),
+      title: _('可以开启音效！'),
       scenes: {
         start: {
           text: [
-            _('ears flooded with new sensations.'),
-            _('perhaps silence is safer?')
+            _('耳边的声音会有全新的感官体验。'),
+            _('也许沉默更安全？')
           ],
           buttons: {
             'yes': {
-              text: _('enable audio'),
+              text: _('启用音效'),
               nextScene: 'end',
               onChoose: () => Engine.toggleVolume(true)
             },
             'no': {
-              text: _('disable audio'),
+              text: _('禁用音效'),
               nextScene: 'end',
               onChoose: () => Engine.toggleVolume(false)
             }

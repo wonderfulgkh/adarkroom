@@ -6,19 +6,19 @@
 
 Events.Marketing = [{
   /* Play Penrose! */
-  title: _('Penrose'),
+  title: _('Penrose(彭罗斯)'),
   isAvailable: () => !$SM.get('marketing.penrose'),
   scenes: {
     'start': {
       text: [
-        _('a strange thrumming, pounding and crashing. visions of people and places, of a huge machine and twisting curves.'),
-        _('inviting. it would be so easy to give in, completely.')
+        _('耳边响起奇异的嗡鸣、撞击与轰响…… 模糊的人影、陌生的景象，一台巨大的机械，还有扭曲的曲线在脑海中闪现。'),
+        _('它在召唤你……彻底屈服似乎并不困难。')
       ],
-      notification: _('a strange thrumming, pounding and crashing. and then gone.'),
+      notification: _('耳边响起诡异的嗡鸣、撞击与轰鸣……突然，一切归于沉寂。'),
       blink: true,
       buttons: {
         'give in': {
-          text: _('give in'),
+          text: _('屈服吧'),
           onClick: () => {
             $SM.set('marketing.penrose', true);
           },
