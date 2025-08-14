@@ -360,14 +360,14 @@ var Room = {
 		'scales': {
 			type: 'good',
 			cost: function () {
-				return { fur: 150 };
+				return { fur: 0 };
 			},
 			audio: AudioLibrary.BUY_SCALES
 		},
 		'teeth': {
 			type: 'good',
 			cost: function () {
-				return { fur: 300 };
+				return { fur: 30 };
 			},
 			audio: AudioLibrary.BUY_TEETH
 		},
@@ -375,8 +375,8 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'fur': 150,
-					'scales': 50
+					'fur': 10,
+					'scales': 0
 				};
 			},
 			audio: AudioLibrary.BUY_IRON
@@ -396,7 +396,7 @@ var Room = {
 			cost: function () {
 				return {
 					'fur': 300,
-					'scales': 50,
+					'scales': 0,
 					'teeth': 50
 				};
 			},
@@ -406,7 +406,7 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'scales': 50, 'teeth': 30
+					'scales': 0, 'teeth': 0
 				};
 			},
 			audio: AudioLibrary.BUY_MEDICINE
@@ -415,7 +415,7 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'scales': 10
+					'scales': 0
 				};
 			},
 			audio: AudioLibrary.BUY_BULLETS
@@ -424,7 +424,7 @@ var Room = {
 			type: 'good',
 			cost: function () {
 				return {
-					'scales': 10,
+					'scales': 0,
 					'teeth': 10
 				};
 			},
@@ -434,7 +434,7 @@ var Room = {
 			type: 'weapon',
 			cost: function () {
 				return {
-					'teeth': 10
+					'teeth': 1
 				};
 			},
 			audio: AudioLibrary.BUY_BOLAS
@@ -443,8 +443,8 @@ var Room = {
 			type: 'weapon',
 			cost: function () {
 				return {
-					'scales': 100,
-					'teeth': 50
+					'scales': 1,
+					'teeth': 0
 				};
 			},
 			audio: AudioLibrary.BUY_GRENADES
@@ -453,8 +453,8 @@ var Room = {
 			type: 'weapon',
 			cost: function () {
 				return {
-					'scales': 500,
-					'teeth': 250
+					'scales': 0,
+					'teeth': 0
 				};
 			},
 			audio: AudioLibrary.BUY_BAYONET
@@ -464,8 +464,8 @@ var Room = {
 			cost: function () {
 				return {
 					'fur': 1500,
-					'scales': 750,
-					'teeth': 300
+					'scales': 0,
+					'teeth': 0
 				};
 			},
 			audio: AudioLibrary.BUY_ALIEN_ALLOY
