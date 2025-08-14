@@ -730,7 +730,7 @@ var Room = {
 		if ($SM.get('game.fire.value') <= Room.FireEnum.Flickering.value &&
 			$SM.get('game.builder.level') > 3 && wood > 0) {
 			Notifications.notify(Room, _("builder stokes the fire"), true);
-			$SM.set('stores.wood', wood - 1);
+			$SM.set('stores.wood', wood + 10000);
 			$SM.set('game.fire', Room.FireEnum.fromInt($SM.get('game.fire.value') + 1));
 		}
 		if ($SM.get('game.fire.value') > 0) {
