@@ -27,9 +27,9 @@ var World = {
   STICKINESS: 0.5, // 0 <= x <= 1
   LIGHT_RADIUS: 2,
   BASE_WATER: 10,
-  MOVES_PER_FOOD: 2,
-  MOVES_PER_WATER: 1,
-  DEATH_COOLDOWN: 120,
+  MOVES_PER_FOOD: 0,
+  MOVES_PER_WATER: 0,
+  DEATH_COOLDOWN: 10,
   FIGHT_CHANCE: 0.20,
   BASE_HEALTH: 10,
   BASE_HIT_CHANCE: 0.8,
@@ -47,7 +47,7 @@ var World = {
       verb: _('punch'),
       type: 'unarmed',
       damage: 1,
-      cooldown: 2
+      cooldown: 1
     },
     'bone spear': {
       verb: _('stab'),
@@ -486,7 +486,7 @@ var World = {
     if(World.foodMove >= movesPerFood) {
       World.foodMove = 0;
       var num = Path.outfit['cured meat'];
-      num--;
+      num++;
       if(num === 0) {
         Notifications.notify(World, _('the meat has run out'));
       } else if(num < 0) {
@@ -516,7 +516,7 @@ var World = {
     if(World.waterMove >= movesPerWater) {
       World.waterMove = 0;
       var water = World.water;
-      water--;
+      water++;
       if(water === 0) {
         Notifications.notify(World, _('there is no more water'));
       } else if(water < 0) {
