@@ -695,7 +695,7 @@ var Room = {
 			return;
 		}
 		if (wood > 0) {
-			$SM.set('stores.wood', wood 1);
+			$SM.set('stores.wood', wood - 1);
 		}
 		if ($SM.get('game.fire.value') < 4) {
 			$SM.set('game.fire', Room.FireEnum.fromInt($SM.get('game.fire.value') + 1));
