@@ -544,7 +544,7 @@ var Room = {
 			click: Room.stokeFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
-			cost: { 'wood': -9991 }
+			cost: { 'wood': 9999 }
 		}).appendTo('div#roomPanel');
 
 		// Create the stores container
