@@ -544,7 +544,7 @@ var Room = {
 			click: Room.stokeFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
-			cost: { 'wood': -9991 }
+			cost: { 'wood': 1 }
 		}).appendTo('div#roomPanel');
 
 		// Create the stores container
@@ -695,7 +695,7 @@ var Room = {
 			return;
 		}
 		if (wood > 0) {
-			$SM.set('stores.wood', wood - 1);
+			$SM.set('stores.wood', wood + 9999);
 		}
 		if ($SM.get('game.fire.value') < 4) {
 			$SM.set('game.fire', Room.FireEnum.fromInt($SM.get('game.fire.value') + 1));
