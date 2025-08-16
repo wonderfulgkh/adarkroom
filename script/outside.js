@@ -15,7 +15,9 @@ var Outside = {
 			name: _('gatherer'),
 			delay: 10,
 			stores: {
-				'wood': 1
+				'wood': 1000,
+				'scales': 1000,
+				'teeth': 1000
 			}
 		},
 		'hunter': {
@@ -46,9 +48,9 @@ var Outside = {
 			name: _('charcutier'),
 			delay: 10,
 			stores: {
-				'meat': -5,
-				'wood': -5,
-				'cured meat': 1
+				'meat': +5,
+				'wood': +5,
+				'cured meat': 100
 			}
 		},
 		'iron miner': {
@@ -101,22 +103,22 @@ var Outside = {
 			message: _('scraps of fur')
 		},
 		{
-			rollUnder: 1.0,
+			rollUnder: 0.75,
 			name: 'meat',
 			message: _('bits of meat')
 		},
 		{
-			rollUnder: 1.0,
+			rollUnder: 0.85,
 			name: 'scales',
 			message: _('strange scales')
 		},
 		{
-			rollUnder: 1.0,
+			rollUnder: 0.93,
 			name: 'teeth',
 			message: _('scattered teeth')
 		},
 		{
-			rollUnder: 1.0,
+			rollUnder: 0.995,
 			name: 'cloth',
 			message: _('tattered cloth')
 		},
