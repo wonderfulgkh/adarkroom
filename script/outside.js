@@ -17,7 +17,15 @@ var Outside = {
 			stores: {
 				'wood': 1000,
 				'scales': 1000,
-				'teeth': 1000
+				'teeth': 1000,
+				'fur': 1000,
+				'meat': 1000,
+				'bait': 1000,
+				'leather': 1000,
+				'cured meat': 1000,
+				'steel': 1000,
+				'sulphur': 1000,
+				'bullets': 1000
 			}
 		},
 		'hunter': {
