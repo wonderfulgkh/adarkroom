@@ -15,17 +15,17 @@ var Outside = {
 			name: _('gatherer'),
 			delay: 10,
 			stores: {
-				'wood': 1000,
-				'scales': 1000,
-				'teeth': 1000,
-				'fur': 1000,
-				'meat': 1000,
-				'bait': 1000,
-				'leather': 1000,
-				'cured meat': 1000,
-				'steel': 1000,
-				'sulphur': 1000,
-				'bullets': 1000
+				'wood': 10,
+				'scales': 10,
+				'teeth': 10,
+				'fur': 10,
+				'meat': 10,
+				'bait': 10,
+				'leather': 10,
+				'cured meat': 10,
+				'steel': 10,
+				'sulphur': 10,
+				'bullets': 10
 			}
 		},
 		'hunter': {
