@@ -47,78 +47,78 @@ var World = {
       verb: _('punch'),
       type: 'unarmed',
       damage: 1,
-      cooldown: 1
+      cooldown: 0
     },
     'bone spear': {
       verb: _('stab'),
       type: 'melee',
       damage: 2,
-      cooldown: 2
+      cooldown: 0
     },
     'iron sword': {
       verb: _('swing'),
       type: 'melee',
       damage: 4,
-      cooldown: 2
+      cooldown: 0
     },
     'steel sword': {
       verb: _('slash'),
       type: 'melee',
       damage: 6,
-      cooldown: 2
+      cooldown: 0
     },
     'bayonet': {
       verb: _('thrust'),
       type: 'melee',
       damage: 8,
-      cooldown: 2
+      cooldown: 0
     },
     'rifle': {
       verb: _('shoot'),
       type: 'ranged',
       damage: 5,
-      cooldown: 1,
+      cooldown: 0,
       cost: { 'bullets': 1 }
     },
     'laser rifle': {
       verb: _('blast'),
       type: 'ranged',
       damage: 8,
-      cooldown: 1,
+      cooldown: 0,
       cost: { 'energy cell': 1 }
     },
     'grenade': {
       verb: _('lob'),
       type: 'ranged',
       damage: 15,
-      cooldown: 5,
+      cooldown: 0,
       cost: { 'grenade': 1 }
     },
     'bolas': {
       verb: _('tangle'),
       type: 'ranged',
       damage: 'stun',
-      cooldown: 15,
+      cooldown: 0,
       cost: { 'bolas': 1 }
     },
     'plasma rifle': {
       verb: _('disintigrate'),
       type: 'ranged',
       damage: 12,
-      cooldown: 1,
+      cooldown: 0,
       cost: { 'energy cell': 1 }
     },
     'energy blade': {
       verb: _('slice'),
       type: 'melee',
       damage: 10,
-      cooldown: 2
+      cooldown: 0
     },
     'disruptor': {
       verb: _('stun'),
       type: 'ranged',
       damage: 'stun',
-      cooldown: 15
+      cooldown: 0
     }
   },
 
