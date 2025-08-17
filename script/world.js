@@ -486,7 +486,6 @@ var World = {
     if(World.foodMove >= movesPerFood) {
       World.foodMove = 0;
       var num = Path.outfit['cured meat'];
-      num++;
       if(num === 0) {
         Notifications.notify(World, _('the meat has run out'));
       } else if(num < 0) {
